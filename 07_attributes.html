@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes in html</title>
+</head>
+<body>
+    <h2>Attributes in HTML</h2>
+<!--
+    In HTML, attributes provide extra information about an element. 
+    They are always included in the opening tag and usually 
+    come in name-value pairs like name="value".
+
+    Think of HTML elements as nouns (e.g., a car) and attributes as adjectives 
+    that describe or configure those nouns (e.g., a red car, a four-door car).
+
+    Anatomy of an Attribute
+-->
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+<!--
+    In this example:
+    href and target are the attribute names.
+    https://www.google.com and _blank are the attribute values (always wrapped in quotation marks).
+-->   
+
+<!--
+    Core & Common Attributes:  While some attributes only work on specific tags, 
+    others can be used on almost any HTML element.
+-->
+<!--
+    1. Global Attributes (Can be used on any element): 
+        id: Specifies a unique ID for an element (used for CSS styling or JavaScript manipulation).
+        Example: <div id="header">
+        
+        class: Assigns one or more class names to an element (used to apply CSS styles to multiple elements).
+        Example: <p class="text-bold dynamic-color">
+            
+        style: Applies inline CSS styles directly to the element.
+        Example: <h1 style="color: blue;">Heading</h1>
+        
+        title: Adds extra information that typically appears as a "tooltip" when a user hovers over 
+        the element.
+        Example: <span title="More information">Hover me</span>
+        
+        
+    2. Element-Specific Attributes: Some tags require specific attributes to function properly:
+    Tag       Common Attributes          What it does                                              Example
+    <a>       href                       Specifies the URL the link goes to                        <a href="index.html">Home</a>
+    <img>     src, alt, width            Defines image source path, fallback text, and size        <img src="dog.jpg" alt="A happy puppy">
+    <input>   type, placeholder, value   Defines form control type and placeholder text            <input type="email" placeholder="Your Email">
+    <form>    action, method             Where to send form data and how to send it (GET/POST)     <form action="/submit" method="POST">
+        
+        
+    3. Boolean Attributes: Some attributes don't need a value. 
+        Their presence alone triggers a specific behavior on the element. 
+        These are called boolean attributes.
+        
+        disabled: Disables an interactive element.
+        Example: <input type="text" disabled>
+        
+        required: Forces a form field to be filled out before submitting.
+        Example: <input type="password" required>
+        
+        checked: Pre-selects a checkbox or radio button.
+        Example: <input type="checkbox" checked>
+-->
+
+<!--
+    Rules for Writing Attributes:
+    
+    Always put them in the opening tag: Never place an attribute in a closing tag 
+        (e.g., </p class="test"> is invalid).
+        
+    Use lowercase: HTML is case-insensitive, but writing attributes in lowercase 
+        (class="" instead of CLASS="") is the industry standard.
+        
+    Quote your values: While HTML5 technically allows you to omit quotes if there are 
+        no spaces in the value, always wrapping values in double quotes (" ") prevents bugs 
+        and keeps code clean.
+-->
+</body>
+</html>
