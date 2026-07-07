@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Closing Tags</title>
+  </head>
+  <body>
+    <h2>Self closing tags in html</h2>
+    <p>
+      In HTML, self-closing tags (also known as void elements) are tags that do
+      not require a separate closing tag (like </img> or </br>).
+      Because they cannot contain any text or other HTML elements inside them,
+      they are closed within a single tag.
+    </p>
+
+    <h2>How They Work</h2>
+    <p>
+      In standard HTML5, you can write self-closing tags in two ways. Both are
+      perfectly valid, and browsers will render them exactly the same: The
+      Standard HTML5 way: <img src="image.jpg" /> (No trailing slash) The
+      XHTML/React way: <img src="image.jpg" /> (With a trailing slash) 
+    </p>
+
+    <h2>Note for React/JSX developers: </h2>
+    <p>
+      If you are working in React or JSX, the trailing
+      slash (/) is strictly required, otherwise your code will throw a syntax
+      error. In pure HTML5, it is optional and purely a matter of personal or
+      team style.
+    </p>
+
+    <h2> Examples</h2>
+    <p>
+        <img>Embeds an image<img src="logo.png" alt="Company Logo">
+        <br>Inserts a single line breakFirst line <br> Second line
+        <hr>Inserts a horizontal thematic rule (line)<hr>
+        <input>Creates an interactive input control<input type="text" placeholder="Enter name">
+        <meta>Provides metadata about the HTML document<meta charset="UTF-8">
+        <link>Links an external resource (like a CSS file)<link rel="stylesheet" href="styles.css">
+        <source>Specifies media resources for <audio> or <video><source src="audio.mp3" type="audio/mpeg">
+    </p>
+
+    <h2>The Difference: Normal vs. Self-Closing</h2>
+    <p>To visualize why some tags close themselves and others don't, think of them as containers: </p>
+
+    <p> <b> Normal Tags (Container Tags):</b> Act likeS boxes. You open the box, put content inside, and close the box.</p>
+    <b> Example:</b> <p>This is container content.</p>
+
+    <p> <b> Self-Closing Tags (Void Tags):</b> Act like standalone stamps. They just drop an object or a command directly onto the page at that exact spot. </p>
+
+    <p> <b>Example:</b> <hr> (Just draws a line, nothing goes "inside" the line). </p>
+  </body>
+</html>
