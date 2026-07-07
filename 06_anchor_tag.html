@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag</title>
+</head>
+<body>
+    <h2>Anchor Tag</h2>
+<!--
+    The anchor tag (<a>) is used to create hyperlinks in HTML. 
+    These links can connect your page to another website, 
+    a different page on your own site, a specific section on the same page, 
+    or even an email address or phone number.
+
+    It is an inline container tag, meaning you place the clickable text 
+    or image inside the opening and closing tags.
+
+    The Anatomy of an Anchor Tag:
+-->
+    <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a>
+<!-- 
+    <a> and </a>: The opening and closing tags.
+    href: Short for Hypertext Reference. This is the mandatory attribute that defines the destination URL.
+    Link Text: The visible, clickable text on the screen ("Visit Wikipedia").
+    target="_blank": An optional attribute that tells the browser to open the link in a new tab.
+-->
+
+<!--
+    5 Common Ways to Use the Anchor Tag:
+
+    1. Linking to an External Website:
+    Use the full URL, including the protocol (https://).
+-->
+    <a href="https://www.google.com">Go to Google</a>
+
+<!--
+    2. Linking to a Local Page (Relative Path):
+    If you are linking to another file within your own project folder, 
+    use a relative file path instead of a full web URL.
+-->
+    <a href="about.html">About Us</a>
+
+<!--
+    3. Creating an Anchor Link (Jump Links on the Same Page):
+    You can link to a specific section of the current webpage by referencing 
+    the target element's id attribute using a hashtag (#).
+-->
+    <a href="#contact-section">Jump to Contact Info</a>
+    <h2 id="contact-section">Contact Details</h2>
+
+<!--
+    4. Creating Email and Phone Links:
+    You can use special prefixes inside the href attribute to launch 
+    the user's default email client or phone dialer.
+-->
+    <a href="mailto:support@example.com">Email Support</a>
+    <a href="tel:+15555555555">Call Us Now</a>
+
+<!--
+    5. Making an Image Clickable
+    You can wrap an anchor tag around an <img> tag to turn an image into a hyperlink.
+-->
+    <a href="https://www.nasa.gov">
+      <img src="nasa-logo.png" alt="NASA Homepage">
+    </a>
+
+
+</body>
+</html>
